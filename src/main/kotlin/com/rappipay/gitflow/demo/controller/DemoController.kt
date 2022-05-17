@@ -20,4 +20,7 @@ class DemoController(
 
     @PostMapping("/")
     fun saveDemo(@RequestBody demoRequest: DemoRequest) = service.saveDemo(demoRequest)
+
+    @GetMapping("/version")
+    fun getVersion() = "version 2"
 }
