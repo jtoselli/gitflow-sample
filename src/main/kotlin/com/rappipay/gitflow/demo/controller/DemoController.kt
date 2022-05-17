@@ -23,4 +23,7 @@ class DemoController(
 
     @GetMapping("/version")
     fun getVersion() = "version 2"
+
+    @GetMapping("/version2")
+    fun getVersion2() = "version 2.0"
 }
