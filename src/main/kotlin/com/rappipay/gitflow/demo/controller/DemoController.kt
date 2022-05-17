@@ -14,4 +14,7 @@ class DemoController(
 
     @GetMapping("/{id}")
     fun getDemo(@PathVariable id: Int): DemoResponse = service.getDemo(id) ?: throw NotFoundException()
+
+    @GetMapping("/version")
+    fun getVersion() = "version 2"
 }
