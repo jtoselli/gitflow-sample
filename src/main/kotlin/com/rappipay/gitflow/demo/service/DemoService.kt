@@ -5,5 +5,5 @@ import com.rappipay.gitflow.demo.request.DemoRequest
 
 interface DemoService {
     fun getDemo(id: Int): DemoResponse?
-    fun saveDemo(demo: DemoRequest): DemoResponse
+    fun saveDemo(demo: DemoRequest?): DemoResponse?
 }

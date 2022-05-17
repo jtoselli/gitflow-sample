@@ -19,7 +19,7 @@ class DemoController(
     fun getDemo(@PathVariable id: Int): DemoResponse = service.getDemo(id) ?: throw NotFoundException()
 
     @PostMapping("/")
-    fun saveDemo(@RequestBody demoRequest: DemoRequest) = service.saveDemo(demoRequest)
+    fun saveDemo(@RequestBody demoRequest: DemoRequest?) = service.saveDemo(demoRequest)
 
     @GetMapping("/version")
     fun getVersion() = "version 2"
